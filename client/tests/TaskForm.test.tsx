@@ -64,7 +64,7 @@ describe('TaskForm Component tests', () => {
 
     await user.click(submitBtn);
 
-    expect(handleSubmit).toHaveBeenCalledTimes(2);
+    expect(handleSubmit).toHaveBeenCalledTimes(1);
     expect(handleSubmit).toHaveBeenCalledWith({
       title: 'Deploy with Docker',
       description: 'Write Dockerfile and compose',

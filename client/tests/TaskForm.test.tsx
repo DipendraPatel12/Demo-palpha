@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { TaskForm } from '../src/components/TaskForm';
 
-describe('TaskForm Component', () => {
+describe('TaskForm Component tests', () => {
   it('renders form inputs with initial values or defaults', () => {
     const handleCancel = vi.fn();
     const handleSubmit = vi.fn();

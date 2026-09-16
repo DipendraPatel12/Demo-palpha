@@ -11,6 +11,8 @@ export const apiClient = axios.create({
   timeout: 10000,
 });
 
+console.log("Hiii for testing")
+
 export const getTasks = async (status?: string): Promise<Task[]> => {
   const params: Record<string, string> = {};
   if (status && status !== 'all') {

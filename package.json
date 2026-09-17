@@ -1,6 +1,7 @@
 {
   "name": "mern-task-manager",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "description": "A beginner-friendly, production-structured full-stack MERN Task Management application",
   "workspaces": [
@@ -17,10 +18,13 @@
     "build:server": "npm run build --workspace=server",
     "test": "npm run test --workspace=server && npm run test --workspace=client",
     "test:client": "npm run test --workspace=client",
-    "test:server": "npm run test --workspace=server"
+    "test:server": "npm run test --workspace=server",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^9.1.2",
+    "eslint": "^10.10.0"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -29,6 +29,11 @@ jobs:
       - name: Test GitHub Secret
         run: echo "Secret is available - ${{ secrets.MY_TEST_SECRET }}"
 
+      - name: Test environment variable
+        env:
+          MY_TEST_SECRET: ${{ secrets.MY_TEST_SECRET }}
+        run: node -e "console.log(process.env.MY_TEST_SECRET)"
+
       - name: Run lint
         run: npm run lint
 
